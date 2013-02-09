@@ -2,17 +2,18 @@ package hotel;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.AccessLevel;
 
+@RequiredArgsConstructor
 public class Hotel {
 	
-	@Getter @Setter (AccessLevel.PACKAGE) private String name;	
+	@Getter (AccessLevel.PACKAGE) private final String name;	
 	@Getter @Setter private String address;	
 	@Getter @Setter private String telephone;
-	@Getter @Setter private int numberOfRooms;
+	@Getter @Setter @NonNull private int numberOfRooms;
 	@Getter @Setter private int starRating;
-	@Getter @Setter private String manager;	
-	
-	
+	@Getter @Setter @NonNull private String manager;		
 }
 
