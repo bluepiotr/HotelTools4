@@ -6,7 +6,7 @@ public class HotelTester {
 		
 		//Testing Person
 		Person p = new Person("Johny", "jonny", "Mac");
-		Person q = new Person("John", "jonny", "Mac");
+		Person q = new Person("Johny", "jonny", "Macaa");
 		if (p.equals(q)){
 			System.out.println("Person " + p.getName() + " Person "
 					+ q.getName() + " are" + " Equal");
