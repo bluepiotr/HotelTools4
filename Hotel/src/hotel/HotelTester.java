@@ -4,7 +4,6 @@ public class HotelTester {
 	
 	public static void main (String[] args){
 		
-		
 		//Testing Person
 		Person p = new Person("Johny", "jonny", "Mac");
 		Person q = new Person("John", "jonny", "Mac");
@@ -16,15 +15,14 @@ public class HotelTester {
 				System.out.println("These persons are different ");
 			}
 		
-		System.out.println(p.hashCode());
-		System.out.println(q.hashCode());
+		System.out.println("Person " + p.getName()+ " hashcode= " 
+							+ p.hashCode());
+		System.out.println("Person " + q.getName()+ " hashcode= " 
+				+ q.hashCode());
 		
 		//Testing Hotel
-				Hotel h = new Hotel ("Cosy Quarters","27 G St", 
-						"0202 2223333",120,3,"Jon Bon");
-				System.out.println("Now created " + h);
-		
-	
+//				Hotel h = new Hotel ("Cosy Quarters","27 G St", 
+//						"0202 2223333",120,3,"Jon Bon");
+//				System.out.println("Now created " + h);	
 	}
-
 }
